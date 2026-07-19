@@ -31,6 +31,14 @@ nav a{margin-left:18px;color:var(--muted);font-size:15px}
 font-size:14px;color:#7a4a37;margin:24px 0}
 .postlist{list-style:none;padding:0;margin:28px 0}
 .postlist li{border-bottom:1px solid var(--line);padding:20px 0}
+.card{display:flex;gap:18px;align-items:flex-start}
+.thumb{flex:0 0 190px;display:block;border-radius:10px;overflow:hidden;line-height:0;
+border:1px solid var(--line);background:var(--card)}
+.thumb img{width:100%;height:auto;display:block;transition:transform .35s ease}
+.thumb:hover img{transform:scale(1.04)}
+.cardbody{flex:1;min-width:0}
+img.hero{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);margin:18px 0 4px}
+@media(max-width:560px){.card{flex-direction:column;gap:12px}.thumb{flex:none;width:100%}}
 .postlist h2{font-size:20px;margin:0 0 6px;line-height:1.35}
 .postlist h2 a{color:var(--fg)}
 .postlist h2 a:hover{color:var(--accent)}
@@ -65,13 +73,19 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <main class="wrap"><section class="hero"><h1>Mùa Nào Mua Nấy</h1>
 <p>So sánh đồ dùng theo mùa – mua đúng món, đúng lúc, đúng giá</p></section>
 <div class="disclosure">Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</div>
-<ul class="postlist"><li><div class="meta"><span>2026-07-19</span><span class="tag">Hè</span><span class="tag">Làm mát</span></div>
+<ul class="postlist"><li class="card"><a class="thumb" href="https://hoangdtoan-web.github.io/muanao/quat-tich-dien-vs-quat-deo-co-vs-may-phun-suong.html">
+<img src="https://hoangdtoan-web.github.io/muanao/img/quat-tich-dien-vs-quat-deo-co-vs-may-phun-suong.svg" alt="Ảnh minh họa: Quạt tích điện, quạt đeo cổ hay máy phun sương mini? So sánh thẳng thắn cho mùa hè 2026" width="1200" height="630" loading="lazy"></a>
+<div class="cardbody"><div class="meta"><span>2026-07-19</span><span class="tag">Hè</span><span class="tag">Làm mát</span></div>
 <h2><a href="https://hoangdtoan-web.github.io/muanao/quat-tich-dien-vs-quat-deo-co-vs-may-phun-suong.html">Quạt tích điện, quạt đeo cổ hay máy phun sương mini? So sánh thẳng thắn cho mùa hè 2026</a></h2>
-<p class="excerpt">Ba loại quạt cá nhân đang bán chạy nhất mùa hè này khác nhau ở đâu, loại nào thực sự mát và loại nào chỉ marketing. So sánh dung lượng pin, lưu lượng gió và chi phí thật.</p></li><li><div class="meta"><span>2026-07-18</span><span class="tag">Hè</span><span class="tag">Chống nắng</span></div>
+<p class="excerpt">Ba loại quạt cá nhân đang bán chạy nhất mùa hè này khác nhau ở đâu, loại nào thực sự mát và loại nào chỉ marketing. So sánh dung lượng pin, lưu lượng gió và chi phí thật.</p></div></li><li class="card"><a class="thumb" href="https://hoangdtoan-web.github.io/muanao/ao-chong-nang-upf-50-so-sanh-chat-lieu.html">
+<img src="https://hoangdtoan-web.github.io/muanao/img/ao-chong-nang-upf-50-so-sanh-chat-lieu.svg" alt="Ảnh minh họa: Áo chống nắng UPF 50+ có thật sự chống tia UV? Cách đọc thông số để không mua nhầm" width="1200" height="630" loading="lazy"></a>
+<div class="cardbody"><div class="meta"><span>2026-07-18</span><span class="tag">Hè</span><span class="tag">Chống nắng</span></div>
 <h2><a href="https://hoangdtoan-web.github.io/muanao/ao-chong-nang-upf-50-so-sanh-chat-lieu.html">Áo chống nắng UPF 50+ có thật sự chống tia UV? Cách đọc thông số để không mua nhầm</a></h2>
-<p class="excerpt">UPF 50+ nghĩa là gì, khác gì SPF, và tại sao một chiếc áo cotton dày có thể chống nắng kém hơn áo polyester mỏng. Hướng dẫn đọc thông số trước khi mua áo chống nắng.</p></li><li><div class="meta"><span>2026-07-17</span><span class="tag">Tựu trường</span><span class="tag">Đồ học sinh</span></div>
+<p class="excerpt">UPF 50+ nghĩa là gì, khác gì SPF, và tại sao một chiếc áo cotton dày có thể chống nắng kém hơn áo polyester mỏng. Hướng dẫn đọc thông số trước khi mua áo chống nắng.</p></div></li><li class="card"><a class="thumb" href="https://hoangdtoan-web.github.io/muanao/balo-chong-gu-hoc-sinh-tuu-truong-2026.html">
+<img src="https://hoangdtoan-web.github.io/muanao/img/balo-chong-gu-hoc-sinh-tuu-truong-2026.svg" alt="Ảnh minh họa: Balo chống gù cho học sinh: tiêu chí chọn thật sự quan trọng trước mùa tựu trường 2026" width="1200" height="630" loading="lazy"></a>
+<div class="cardbody"><div class="meta"><span>2026-07-17</span><span class="tag">Tựu trường</span><span class="tag">Đồ học sinh</span></div>
 <h2><a href="https://hoangdtoan-web.github.io/muanao/balo-chong-gu-hoc-sinh-tuu-truong-2026.html">Balo chống gù cho học sinh: tiêu chí chọn thật sự quan trọng trước mùa tựu trường 2026</a></h2>
-<p class="excerpt">Chống gù&quot; là nhãn marketing hay tính năng thật? Bốn tiêu chí kỹ thuật cần kiểm tra khi chọn balo học sinh, và giới hạn trọng lượng an toàn theo cân nặng của trẻ.</p></li></ul></main>
+<p class="excerpt">Chống gù&quot; là nhãn marketing hay tính năng thật? Bốn tiêu chí kỹ thuật cần kiểm tra khi chọn balo học sinh, và giới hạn trọng lượng an toàn theo cân nặng của trẻ.</p></div></li></ul></main>
 <footer class="site"><div class="wrap">
 <p>Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</p>
 <p>© 2026 Mùa Nào Mua Nấy · <a href="https://hoangdtoan-web.github.io/muanao/minh-bach.html">Chính sách minh bạch</a></p>
