@@ -59,6 +59,27 @@ font-weight:600;text-decoration:none!important;margin:8px 8px 8px 0;font-size:16
 .btn:hover{background:var(--accent-dark)}
 .verdict{background:#f4f9f4;border:1px solid #cfe4cf;border-radius:10px;padding:18px 20px;margin:26px 0}
 .verdict strong{display:block;margin-bottom:6px}
+/* Hộp gợi ý sản phẩm cụ thể */
+.rec{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:26px 0;overflow:hidden}
+.rec-head{background:#fff5f1;border-bottom:1px solid var(--line);padding:12px 18px;font-weight:700;font-size:16px;color:var(--accent-dark)}
+.rec-item{padding:16px 18px;border-bottom:1px solid var(--line)}
+.rec-item:last-of-type{border-bottom:none}
+.rec-item b{display:block;font-size:16px;margin-bottom:4px;line-height:1.4}
+.rec-meta{display:inline-block;font-size:13px;color:var(--muted);background:#f4f1ec;border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.rec-item p{margin:6px 0 12px;font-size:15px;color:#444}
+.btn-sm{display:inline-block;background:var(--accent);color:#fff!important;padding:9px 18px;border-radius:7px;
+font-weight:600;text-decoration:none!important;font-size:15px}
+.btn-sm:hover{background:var(--accent-dark)}
+.rec-note{padding:12px 18px;background:#fafaf8;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+/* Hộp chọn nhanh đầu bài */
+.quick{background:#f7f4ef;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 20px;margin:24px 0}
+.quick b{color:var(--accent-dark)}
+.quick p{margin:6px 0}
+/* Bài liên quan */
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:20px}
+.related h3{font-size:17px;margin:0 0 10px}
+.related ul{margin:0;padding-left:20px}
+.related li{margin:6px 0}
 footer.site{border-top:1px solid var(--line);margin-top:50px;padding:28px 0 44px;color:var(--muted);font-size:14px}
 footer.site a{color:var(--muted)}
 code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
@@ -77,7 +98,10 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <div class="disclosure">Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</div>
 <p>Mùa tựu trường tháng 8–9 là lúc từ khóa "balo chống gù" bùng nổ. Hầu hết sản phẩm gắn nhãn này có giá cao hơn balo thường 30–100%. Câu hỏi hợp lý: phần chênh lệch đó mua được cái gì thật?</p>
 <p>Câu trả lời ngắn: <strong>có những tính năng thật sự giúp giảm áp lực lên cột sống, nhưng nhãn "chống gù" không đảm bảo sản phẩm có chúng.</strong> Bài này chỉ ra bốn thứ cần kiểm tra.</p>
-<h2>Con số quan trọng nhất: giới hạn trọng lượng</h2>
+<div class="quick">
+<p><b>Nếu bạn đang vội:</b> vùng giá đáng tiền nhất là <b>200.000–450.000đ</b>. Bốn thứ cần có: tấm lưng định hình, quai vai bản từ 5cm có đệm, <b>đai ngực</b>, và balo rỗng càng nhẹ càng tốt. Nhưng yếu tố quyết định nhất không nằm ở chiếc balo — <a href="#gioi-han-trong-luong">tổng trọng lượng phải dưới 15% cân nặng của trẻ</a>.</p>
+</div>
+<h2 id="gioi-han-trong-luong">Con số quan trọng nhất: giới hạn trọng lượng</h2>
 <p>Trước khi bàn đến balo, đây là yếu tố quyết định lớn nhất đến lưng của trẻ.</p>
 <p>Khuyến nghị phổ biến từ các hiệp hội nhi khoa và vật lý trị liệu: <strong>balo khi đã xếp đồ không nên vượt quá 10–15% trọng lượng cơ thể trẻ.</strong></p>
 <table><thead><tr><th>Cân nặng của trẻ</th><th>Trọng lượng balo tối đa nên mang</th></tr></thead><tbody>
@@ -105,7 +129,22 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <tr><td>Trên 900.000đ</td><td>Thương hiệu, thiết kế, vật liệu nhẹ</td><td>—</td><td>Chủ yếu trả cho thương hiệu và độ bền dài hạn</td></tr>
 </tbody></table>
 <p>Vùng 200.000–450.000đ là nơi có tỷ lệ giá trị trên tiền tốt nhất. Vượt lên trên chủ yếu mua độ bền và trọng lượng nhẹ hơn, không phải mua thêm khả năng "chống gù".</p>
-<p><a class="btn" href="https://s.shopee.vn/9KgZ1psZt5" rel="nofollow sponsored noopener" target="_blank">Xem các mẫu balo chống gù trên Shopee</a></p>
+<div class="rec">
+<div class="rec-head">Hai mẫu trong vùng giá đáng tiền nhất</div>
+<div class="rec-item">
+<b>Balo chống gù hàng xuất Anh cho bé tiểu học, kháng nước, siêu nhẹ</b>
+<span class="rec-meta">4.9 sao · 10k+ đã bán/tháng</span>
+<p>Điểm đáng chú ý nhất là <strong>trọng lượng rỗng nhẹ</strong> — thông số bị bỏ qua nhiều nhất nhưng quan trọng bậc nhất, vì balo rỗng nhẹ để lại nhiều "ngân sách" trọng lượng hơn cho sách vở. Hợp học sinh tiểu học mang vừa phải. Điểm trừ: "kháng nước" ở đây là mức bắn té, đi mưa to vẫn ướt sách.</p>
+<a class="btn-sm" href="https://s.shopee.vn/4LHt8c8tiX" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-item">
+<b>Balo chống gù SHUNYU cho bé trai tiểu học</b>
+<span class="rec-meta">4.9 sao · 6k+ đã bán/tháng</span>
+<p>Có tấm lưng định hình và quai vai bản rộng — hai trong bốn tiêu chí kỹ thuật thật ở trên. Nhiều họa tiết cho bé chọn, yếu tố này thực tế quan trọng hơn người lớn nghĩ vì trẻ chịu đeo đúng cách thì mới có tác dụng. Điểm trừ: cần kiểm tra kỹ có đai ngực không tùy phiên bản.</p>
+<a class="btn-sm" href="https://s.shopee.vn/4AySwJ9X3W" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-note">Chọn theo bốn tiêu chí kỹ thuật trong bài, dựa trên đánh giá và lượt bán công khai trên Shopee tính đến 19/07/2026. Tôi chưa trực tiếp dùng từng mẫu. Sau khi nhận hàng, hãy làm bốn bước kiểm tra ở cuối bài — đặc biệt là cân balo rỗng.</div>
+</div>
 <h2>Những tính năng được quảng cáo mạnh nhưng ít giá trị</h2>
 <ul>
 <li><strong>"Chống nước 100%"</strong> — hầu hết balo học sinh chỉ chống nước nhẹ ở mức bắn té. Đi mưa to vẫn ướt sách. Một chiếc áo mưa trùm balo giá vài chục nghìn hiệu quả hơn nhiều.</li>
@@ -124,8 +163,11 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <strong>Kết luận:</strong>
 <p>"Chống gù" không phải một tiêu chuẩn có thật, mà là tên gọi thương mại. Thứ thật sự bảo vệ lưng trẻ là: balo rỗng nhẹ, tấm lưng định hình, quai vai bản rộng có đai ngực, và quan trọng nhất — <strong>tổng trọng lượng dưới 15% cân nặng của trẻ</strong>. Một chiếc balo 300.000đ đủ tiêu chí, xếp đồ hợp lý, tốt hơn một chiếc 1 triệu nhồi đầy sách.</p>
 </div>
+<p style="margin:22px 0"><a class="btn" href="https://s.shopee.vn/4LHt8c8tiX" rel="nofollow sponsored noopener" target="_blank">Mẫu siêu nhẹ cho tiểu học</a>
+<a class="btn" href="https://s.shopee.vn/4AySwJ9X3W" rel="nofollow sponsored noopener" target="_blank">Mẫu có tấm lưng định hình</a></p>
 <p><em>Bài viết tổng hợp các khuyến nghị chung về công thái học. Nếu trẻ có dấu hiệu đau lưng, vẹo cột sống hoặc lệch vai kéo dài, hãy đưa trẻ đi khám chuyên khoa thay vì tự xử lý bằng cách đổi balo.</em></p>
-<p style="margin-top:36px"><a href="https://hoangdtoan-web.github.io/muanao/">&larr; Xem tất cả bài so sánh</a></p>
+<div class="related"><h3>Bài liên quan</h3><ul><li><a href="https://hoangdtoan-web.github.io/muanao/ao-chong-nang-upf-50-so-sanh-chat-lieu.html">Áo chống nắng UPF 50+ có thật sự chống tia UV? Cách đọc thông số để không mua nhầm</a></li><li><a href="https://hoangdtoan-web.github.io/muanao/quat-tich-dien-vs-quat-deo-co-vs-may-phun-suong.html">Quạt tích điện, quạt đeo cổ hay máy phun sương mini? So sánh thẳng thắn cho mùa hè 2026</a></li></ul></div>
+<p style="margin-top:28px"><a href="https://hoangdtoan-web.github.io/muanao/">&larr; Xem tất cả bài so sánh</a></p>
 </article></main>
 <footer class="site"><div class="wrap">
 <p>Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</p>

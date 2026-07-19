@@ -59,6 +59,27 @@ font-weight:600;text-decoration:none!important;margin:8px 8px 8px 0;font-size:16
 .btn:hover{background:var(--accent-dark)}
 .verdict{background:#f4f9f4;border:1px solid #cfe4cf;border-radius:10px;padding:18px 20px;margin:26px 0}
 .verdict strong{display:block;margin-bottom:6px}
+/* Hộp gợi ý sản phẩm cụ thể */
+.rec{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:26px 0;overflow:hidden}
+.rec-head{background:#fff5f1;border-bottom:1px solid var(--line);padding:12px 18px;font-weight:700;font-size:16px;color:var(--accent-dark)}
+.rec-item{padding:16px 18px;border-bottom:1px solid var(--line)}
+.rec-item:last-of-type{border-bottom:none}
+.rec-item b{display:block;font-size:16px;margin-bottom:4px;line-height:1.4}
+.rec-meta{display:inline-block;font-size:13px;color:var(--muted);background:#f4f1ec;border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.rec-item p{margin:6px 0 12px;font-size:15px;color:#444}
+.btn-sm{display:inline-block;background:var(--accent);color:#fff!important;padding:9px 18px;border-radius:7px;
+font-weight:600;text-decoration:none!important;font-size:15px}
+.btn-sm:hover{background:var(--accent-dark)}
+.rec-note{padding:12px 18px;background:#fafaf8;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+/* Hộp chọn nhanh đầu bài */
+.quick{background:#f7f4ef;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 20px;margin:24px 0}
+.quick b{color:var(--accent-dark)}
+.quick p{margin:6px 0}
+/* Bài liên quan */
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:20px}
+.related h3{font-size:17px;margin:0 0 10px}
+.related ul{margin:0;padding-left:20px}
+.related li{margin:6px 0}
 footer.site{border-top:1px solid var(--line);margin-top:50px;padding:28px 0 44px;color:var(--muted);font-size:14px}
 footer.site a{color:var(--muted)}
 code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
@@ -77,7 +98,10 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <div class="disclosure">Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</div>
 <p>Áo chống nắng đã vượt khỏi phạm vi "đồ theo mùa" và trở thành món mặc quanh năm ở Việt Nam. Đi kèm là một rừng sản phẩm gắn nhãn "UPF 50+", "chống UV 99%", "vải lạnh" — phần lớn không kèm bất kỳ chứng nhận nào.</p>
 <p>Bài này giải thích cách đọc thông số thật, để bạn tự phân biệt được áo chống nắng thật và áo dài tay được gọi là áo chống nắng.</p>
-<h2>UPF là gì và khác SPF ra sao</h2>
+<div class="quick">
+<p><b>Nếu bạn đang vội:</b> chọn áo <b>polyester hoặc nylon dệt khít</b>, màu trung bình đến đậm, size vừa hoặc rộng nhẹ. Cách kiểm tra tại nhà chỉ mất 5 giây: giơ áo lên trước đèn — nhìn xuyên qua thấy rõ nguồn sáng thì tia UV cũng xuyên qua tương tự. Bỏ qua mọi sản phẩm ghi "UPF 100", "UPF 300" hay "chống UV 100%" — <a href="#upf-la-gi">đó là con số không có chuẩn</a>.</p>
+</div>
+<h2 id="upf-la-gi">UPF là gì và khác SPF ra sao</h2>
 <p><strong>SPF</strong> (Sun Protection Factor) là chỉ số của kem chống nắng, đo khả năng chống tia UVB gây cháy nắng.</p>
 <p><strong>UPF</strong> (Ultraviolet Protection Factor) là chỉ số của <strong>vải</strong>, đo lượng tia UV — cả UVA và UVB — xuyên qua được sợi vải.</p>
 <p>Cách hiểu con số:</p>
@@ -109,7 +133,22 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <tr><td>Áo dài tay thể thao (rash guard)</td><td>Thoáng, khô nhanh, ôm gọn</td><td>Không che tay và cổ hoàn toàn</td><td>Chạy bộ, bơi, thể thao ngoài trời</td></tr>
 <tr><td>Găng tay + ống tay chống nắng rời</td><td>Rẻ, linh hoạt, dễ giặt</td><td>Chỉ che tay, hở phần thân</td><td>Bổ sung, không thay thế áo</td></tr>
 </tbody></table>
-<p><a class="btn" href="https://s.shopee.vn/9UzzE8rwY6" rel="nofollow sponsored noopener" target="_blank">Xem các mẫu áo chống nắng UPF trên Shopee</a></p>
+<div class="rec">
+<div class="rec-head">Hai mẫu đúng tiêu chí chất liệu ở trên</div>
+<div class="rec-item">
+<b>Áo chống nắng nam nữ 2 lớp GUNO, mũ rộng vành che trán</b>
+<span class="rec-meta">4.9 sao · 70k+ đã bán/tháng</span>
+<p>Cấu trúc 2 lớp là điểm cộng thật: hai lớp vải dệt khít chồng lên nhau chặn UV tốt hơn hẳn một lớp cùng độ dày. Mũ rộng vành che được trán và gáy — hai vùng hay bị bỏ sót. Điểm trừ: 2 lớp thì nóng hơn 1 lớp, đi bộ giữa trưa sẽ thấy bí.</p>
+<a class="btn-sm" href="https://s.shopee.vn/7fYL6g6UAm" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-item">
+<b>Áo váy chống nắng toàn thân 2 lớp cho nữ, vải Hàn lạnh</b>
+<span class="rec-meta">4.9 sao · 200k+ đã bán/tháng</span>
+<p>Dạng váy dài che được chân khi ngồi xe máy — phần mà áo khoác thường bỏ hở. Lượt bán rất cao cho thấy độ vừa vặn ổn định. Điểm trừ quan trọng: váy quá dài gần bánh xe là nguy hiểm thật, hãy đo lại chiều dài so với xe của bạn trước khi mặc đi đường.</p>
+<a class="btn-sm" href="https://s.shopee.vn/7prIIz5qpp" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-note">Lưu ý thẳng thắn: cả hai mẫu này đều <strong>không kèm chứng nhận UPF độc lập</strong> — gần như không sản phẩm nào bán trên sàn tại Việt Nam có. Đó chính là lý do bài này dạy bạn tự kiểm tra bằng cách soi sáng thay vì tin nhãn. Số liệu đánh giá tính đến 19/07/2026.</div>
+</div>
 <h2>Ba lỗi phổ biến khi mua</h2>
 <ol>
 <li><strong>Tin nhãn "UPF 50+" mà không có chứng nhận.</strong> Nhãn này ở Việt Nam gần như không được kiểm soát. Hãy dùng bài kiểm tra soi sáng ở trên thay vì tin nhãn.</li>
@@ -120,8 +159,11 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <strong>Cách chọn nhanh:</strong>
 <p>Ưu tiên polyester hoặc nylon dệt khít, màu trung bình đến đậm, size vừa hoặc rộng nhẹ, có mũ nếu đi xe máy. Bỏ qua các quảng cáo "UPF 1000" hoặc "chống UV 100%" — đó là dấu hiệu shop không hiểu thông số họ đang bán.</p>
 </div>
+<p style="margin:22px 0"><a class="btn" href="https://s.shopee.vn/7fYL6g6UAm" rel="nofollow sponsored noopener" target="_blank">Áo 2 lớp có mũ che trán</a>
+<a class="btn" href="https://s.shopee.vn/7prIIz5qpp" rel="nofollow sponsored noopener" target="_blank">Áo váy che toàn thân cho nữ</a></p>
 <p><em>Bài viết mang tính tham khảo về thông số kỹ thuật của vải, không thay thế tư vấn của bác sĩ da liễu về bảo vệ da.</em></p>
-<p style="margin-top:36px"><a href="https://hoangdtoan-web.github.io/muanao/">&larr; Xem tất cả bài so sánh</a></p>
+<div class="related"><h3>Bài liên quan</h3><ul><li><a href="https://hoangdtoan-web.github.io/muanao/quat-tich-dien-vs-quat-deo-co-vs-may-phun-suong.html">Quạt tích điện, quạt đeo cổ hay máy phun sương mini? So sánh thẳng thắn cho mùa hè 2026</a></li><li><a href="https://hoangdtoan-web.github.io/muanao/balo-chong-gu-hoc-sinh-tuu-truong-2026.html">Balo chống gù cho học sinh: tiêu chí chọn thật sự quan trọng trước mùa tựu trường 2026</a></li></ul></div>
+<p style="margin-top:28px"><a href="https://hoangdtoan-web.github.io/muanao/">&larr; Xem tất cả bài so sánh</a></p>
 </article></main>
 <footer class="site"><div class="wrap">
 <p>Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</p>

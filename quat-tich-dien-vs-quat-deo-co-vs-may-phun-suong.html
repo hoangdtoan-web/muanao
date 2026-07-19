@@ -59,6 +59,27 @@ font-weight:600;text-decoration:none!important;margin:8px 8px 8px 0;font-size:16
 .btn:hover{background:var(--accent-dark)}
 .verdict{background:#f4f9f4;border:1px solid #cfe4cf;border-radius:10px;padding:18px 20px;margin:26px 0}
 .verdict strong{display:block;margin-bottom:6px}
+/* Hộp gợi ý sản phẩm cụ thể */
+.rec{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:26px 0;overflow:hidden}
+.rec-head{background:#fff5f1;border-bottom:1px solid var(--line);padding:12px 18px;font-weight:700;font-size:16px;color:var(--accent-dark)}
+.rec-item{padding:16px 18px;border-bottom:1px solid var(--line)}
+.rec-item:last-of-type{border-bottom:none}
+.rec-item b{display:block;font-size:16px;margin-bottom:4px;line-height:1.4}
+.rec-meta{display:inline-block;font-size:13px;color:var(--muted);background:#f4f1ec;border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.rec-item p{margin:6px 0 12px;font-size:15px;color:#444}
+.btn-sm{display:inline-block;background:var(--accent);color:#fff!important;padding:9px 18px;border-radius:7px;
+font-weight:600;text-decoration:none!important;font-size:15px}
+.btn-sm:hover{background:var(--accent-dark)}
+.rec-note{padding:12px 18px;background:#fafaf8;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+/* Hộp chọn nhanh đầu bài */
+.quick{background:#f7f4ef;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 20px;margin:24px 0}
+.quick b{color:var(--accent-dark)}
+.quick p{margin:6px 0}
+/* Bài liên quan */
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:20px}
+.related h3{font-size:17px;margin:0 0 10px}
+.related ul{margin:0;padding-left:20px}
+.related li{margin:6px 0}
 footer.site{border-top:1px solid var(--line);margin-top:50px;padding:28px 0 44px;color:var(--muted);font-size:14px}
 footer.site a{color:var(--muted)}
 code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
@@ -77,6 +98,9 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <div class="disclosure">Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</div>
 <p>Mùa hè năm nay, ba nhóm sản phẩm làm mát cá nhân gần như chiếm hết mục "bán chạy" trên sàn: quạt tích điện để bàn, quạt đeo cổ và máy phun sương mini. Chúng được quảng cáo gần như giống nhau — "mát lạnh tức thì", "dùng 10 tiếng" — nhưng nguyên lý hoạt động khác hẳn, và có một loại gần như chắc chắn làm bạn thất vọng.</p>
 <p>Bài này so sánh ba loại theo bốn tiêu chí thật: khả năng làm mát thực tế, thời lượng pin, độ ồn, và chi phí sử dụng.</p>
+<div class="quick">
+<p><b>Nếu bạn đang vội:</b> ngồi cố định một chỗ thì mua <b>quạt tích điện để bàn</b> — đây là loại duy nhất thực sự làm mát được cả khu vực bạn ngồi. Đi lại nhiều thì mua <b>quạt đeo cổ không cánh dưới 300g</b>. Còn <b>máy phun sương mini</b> thì trong phòng kín ở Việt Nam gần như vô dụng, lý do ở <a href="#3-may-phun-suong">mục 3</a>.</p>
+</div>
 <h2>Tóm tắt nhanh cho người vội</h2>
 <table><thead><tr><th>Tiêu chí</th><th>Quạt tích điện để bàn</th><th>Quạt đeo cổ</th><th>Máy phun sương mini</th></tr></thead><tbody>
 <tr><td>Nguyên lý làm mát</td><td>Đối lưu không khí</td><td>Đối lưu, thổi trực tiếp vào cổ/mặt</td><td>Bay hơi nước</td></tr>
@@ -97,7 +121,22 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <li>Có ghi rõ "pin lithium có mạch bảo vệ" không. Quạt tích điện giá quá rẻ dùng pin không mạch bảo vệ là rủi ro cháy nổ thật, không phải chuyện dọa.</li>
 <li>Đường kính cánh. Cánh dưới 15cm thì lưu lượng gió rất hạn chế dù động cơ mạnh.</li>
 </ul>
-<p><a class="btn" href="https://s.shopee.vn/9pcpckqfs8" rel="nofollow sponsored noopener" target="_blank">Xem các mẫu quạt tích điện trên Shopee</a></p>
+<div class="rec">
+<div class="rec-head">Hai mẫu đáp ứng đủ tiêu chí ở trên</div>
+<div class="rec-item">
+<b>Quạt tích điện tự động xoay NKC20 (xoay 160°)</b>
+<span class="rec-meta">4.8 sao · 20k+ đã bán/tháng</span>
+<p>Xoay được nên phủ vùng rộng hơn quạt cố định — khác biệt rõ khi dùng cho phòng ngủ hoặc bàn làm việc có hai người. Kẹp được vào xe đẩy, thành giường. Điểm trừ: giá cao hơn mặt bằng, và mẫu có cơ cấu xoay luôn tốn pin hơn mẫu đứng yên.</p>
+<a class="btn-sm" href="https://s.shopee.vn/5q6gv7wBWR" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-item">
+<b>Quạt tích điện để bàn 8 inch dùng chân pin Makita</b>
+<span class="rec-meta">4.8 sao · 10k+ đã bán/tháng</span>
+<p>Dùng pin rời chuẩn Makita — tháo ra sạc riêng, hỏng pin thì thay pin chứ không bỏ cả quạt. Cánh 8 inch cho lưu lượng gió thật, không phải loại mini. Hợp với người đã có sẵn pin Makita hoặc cần dùng ngoài trời, công trường. Điểm trừ: nặng và cồng kềnh, không hợp để bàn văn phòng.</p>
+<a class="btn-sm" href="https://s.shopee.vn/7KvUhsqTTk" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-note">Hai mẫu này được chọn theo đúng tiêu chí trong bài, dựa trên điểm đánh giá và lượt bán công khai trên Shopee tính đến 19/07/2026. Tôi chưa trực tiếp dùng từng mẫu — hãy đọc kỹ các đánh giá 1–3 sao trên trang sản phẩm trước khi đặt.</div>
+</div>
 <h2>2. Quạt đeo cổ — hợp lý trong một tình huống cụ thể</h2>
 <p>Quạt đeo cổ chỉ thắng ở đúng một kịch bản: bạn cần làm mát khi đang <strong>di chuyển và cần rảnh hai tay</strong> — đi bộ ngoài trời, đứng bếp, làm việc ngoài công trường, đi hội chợ.</p>
 <p><strong>Điểm yếu thật:</strong></p>
@@ -109,8 +148,23 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 </ul>
 <p><strong>Ai nên mua:</strong> người làm việc ngoài trời, phụ huynh bế con, người đi lại nhiều.</p>
 <p><strong>Ai không nên mua:</strong> người ngồi bàn làm việc cố định — một chiếc quạt để bàn cùng tầm giá làm mát tốt hơn hẳn.</p>
-<p><a class="btn" href="https://s.shopee.vn/9fJPQRrJD7" rel="nofollow sponsored noopener" target="_blank">Xem các mẫu quạt đeo cổ trên Shopee</a></p>
-<h2>3. Máy phun sương mini — nói thẳng: đa số người mua sẽ hối hận</h2>
+<div class="rec">
+<div class="rec-head">Hai mẫu không cánh, đeo được lâu</div>
+<div class="rec-item">
+<b>Quạt đeo thắt lưng Z09 12.000mAh</b>
+<span class="rec-meta">5.0 sao · 10k+ đã bán/tháng</span>
+<p>Đeo thắt lưng thay vì đeo cổ nên không đè lên gáy — giải quyết đúng nhược điểm lớn nhất của quạt đeo cổ mà tôi nêu ở trên. Thổi gió lên trong áo, hợp người làm ngoài trời. Điểm trừ: chỉ mát khi mặc áo rộng, mặc áo bó thì gió không lưu thông được.</p>
+<a class="btn-sm" href="https://s.shopee.vn/7prIIuzYrF" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-item">
+<b>Quạt đeo Zlife Z11 30.000mAh, 2 luồng gió</b>
+<span class="rec-meta">4.9 sao · 10k+ đã bán/tháng</span>
+<p>Dung lượng pin lớn nhất nhóm này, đeo cổ hoặc cầm tay đều được. Điểm trừ quan trọng: pin càng lớn thì máy càng nặng — nếu bạn định đeo cổ liên tục trên 1 tiếng, hãy cân nhắc mẫu nhẹ hơn dù pin kém hơn.</p>
+<a class="btn-sm" href="https://s.shopee.vn/7KvUi01SsA" rel="nofollow sponsored noopener" target="_blank">Xem trên Shopee</a>
+</div>
+<div class="rec-note">Chọn theo tiêu chí trong bài, dựa trên đánh giá và lượt bán công khai trên Shopee tính đến 19/07/2026. Tôi chưa trực tiếp dùng từng mẫu — đọc kỹ đánh giá 1–3 sao trước khi đặt.</div>
+</div>
+<h2 id="3-may-phun-suong">3. Máy phun sương mini — nói thẳng: đa số người mua sẽ hối hận</h2>
 <p>Đây là phần tôi cần thẳng thắn nhất, vì nhóm sản phẩm này được quảng cáo mạnh nhất mà lại yếu nhất về hiệu quả.</p>
 <p>Máy phun sương làm mát bằng cách để nước bay hơi, và quá trình bay hơi hút nhiệt từ không khí. Nguyên lý này có thật. <strong>Nhưng nó chỉ hoạt động tốt khi không khí khô.</strong></p>
 <p>Độ ẩm trung bình ở Việt Nam vào mùa hè thường xuyên ở mức 70–85%. Trong không khí đã gần bão hòa hơi nước, nước từ máy phun sương gần như không bay hơi được — nó chỉ đọng lại thành hạt li ti trên da, trên bàn phím, trên màn hình. Bạn cảm thấy "mát" trong 3 giây đầu vì da ướt, sau đó là cảm giác ẩm dính khó chịu và độ ẩm phòng còn tăng lên.</p>
@@ -124,8 +178,11 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <p>Di chuyển liên tục, cần rảnh tay → <strong>quạt đeo cổ không cánh</strong>, dưới 300g.<br><br></p>
 <p>Máy phun sương mini → chỉ mua nếu dùng <strong>ngoài trời</strong>. Trong phòng kín ở khí hậu Việt Nam, nó không làm mát mà làm ẩm.</p>
 </div>
+<p style="margin:22px 0"><a class="btn" href="https://s.shopee.vn/5q6gv7wBWR" rel="nofollow sponsored noopener" target="_blank">Quạt tích điện để bàn (xoay 160°)</a>
+<a class="btn" href="https://s.shopee.vn/7prIIuzYrF" rel="nofollow sponsored noopener" target="_blank">Quạt đeo không đè gáy</a></p>
 <p><em>Giá và tình trạng hàng thay đổi liên tục. Hãy kiểm tra trên trang sản phẩm trước khi đặt.</em></p>
-<p style="margin-top:36px"><a href="https://hoangdtoan-web.github.io/muanao/">&larr; Xem tất cả bài so sánh</a></p>
+<div class="related"><h3>Bài liên quan</h3><ul><li><a href="https://hoangdtoan-web.github.io/muanao/ao-chong-nang-upf-50-so-sanh-chat-lieu.html">Áo chống nắng UPF 50+ có thật sự chống tia UV? Cách đọc thông số để không mua nhầm</a></li><li><a href="https://hoangdtoan-web.github.io/muanao/balo-chong-gu-hoc-sinh-tuu-truong-2026.html">Balo chống gù cho học sinh: tiêu chí chọn thật sự quan trọng trước mùa tựu trường 2026</a></li></ul></div>
+<p style="margin-top:28px"><a href="https://hoangdtoan-web.github.io/muanao/">&larr; Xem tất cả bài so sánh</a></p>
 </article></main>
 <footer class="site"><div class="wrap">
 <p>Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</p>
