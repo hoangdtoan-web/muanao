@@ -11,6 +11,9 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="vi_VN">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHRZ8EFPD8"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-QHRZ8EFPD8',{'anonymize_ip':true});</script>
 <style>
 :root{--bg:#fdfcfa;--fg:#1a1a1a;--muted:#666;--line:#e8e4dd;--accent:#ee4d2d;--accent-dark:#c93d20;--card:#fff}
 *{box-sizing:border-box}
@@ -31,6 +34,14 @@ nav a{margin-left:18px;color:var(--muted);font-size:15px}
 font-size:14px;color:#7a4a37;margin:24px 0}
 .postlist{list-style:none;padding:0;margin:28px 0}
 .postlist li{border-bottom:1px solid var(--line);padding:20px 0}
+.card{display:flex;gap:18px;align-items:flex-start}
+.thumb{flex:0 0 190px;display:block;border-radius:10px;overflow:hidden;line-height:0;
+border:1px solid var(--line);background:var(--card)}
+.thumb img{width:100%;height:auto;display:block;transition:transform .35s ease}
+.thumb:hover img{transform:scale(1.04)}
+.cardbody{flex:1;min-width:0}
+img.hero{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);margin:18px 0 4px}
+@media(max-width:560px){.card{flex-direction:column;gap:12px}.thumb{flex:none;width:100%}}
 .postlist h2{font-size:20px;margin:0 0 6px;line-height:1.35}
 .postlist h2 a{color:var(--fg)}
 .postlist h2 a:hover{color:var(--accent)}
@@ -51,6 +62,27 @@ font-weight:600;text-decoration:none!important;margin:8px 8px 8px 0;font-size:16
 .btn:hover{background:var(--accent-dark)}
 .verdict{background:#f4f9f4;border:1px solid #cfe4cf;border-radius:10px;padding:18px 20px;margin:26px 0}
 .verdict strong{display:block;margin-bottom:6px}
+/* Hộp gợi ý sản phẩm cụ thể */
+.rec{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:26px 0;overflow:hidden}
+.rec-head{background:#fff5f1;border-bottom:1px solid var(--line);padding:12px 18px;font-weight:700;font-size:16px;color:var(--accent-dark)}
+.rec-item{padding:16px 18px;border-bottom:1px solid var(--line)}
+.rec-item:last-of-type{border-bottom:none}
+.rec-item b{display:block;font-size:16px;margin-bottom:4px;line-height:1.4}
+.rec-meta{display:inline-block;font-size:13px;color:var(--muted);background:#f4f1ec;border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.rec-item p{margin:6px 0 12px;font-size:15px;color:#444}
+.btn-sm{display:inline-block;background:var(--accent);color:#fff!important;padding:9px 18px;border-radius:7px;
+font-weight:600;text-decoration:none!important;font-size:15px}
+.btn-sm:hover{background:var(--accent-dark)}
+.rec-note{padding:12px 18px;background:#fafaf8;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+/* Hộp chọn nhanh đầu bài */
+.quick{background:#f7f4ef;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 20px;margin:24px 0}
+.quick b{color:var(--accent-dark)}
+.quick p{margin:6px 0}
+/* Bài liên quan */
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:20px}
+.related h3{font-size:17px;margin:0 0 10px}
+.related ul{margin:0;padding-left:20px}
+.related li{margin:6px 0}
 footer.site{border-top:1px solid var(--line);margin-top:50px;padding:28px 0 44px;color:var(--muted);font-size:14px}
 footer.site a{color:var(--muted)}
 code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
@@ -71,6 +103,9 @@ code{background:#f2efe9;padding:2px 5px;border-radius:4px;font-size:.9em}
 <li>Không giấu nhược điểm của sản phẩm.</li>
 <li>Không dùng ảnh chụp màn hình doanh thu để gây áp lực mua hàng.</li></ul>
 <h2>Giá cả</h2><p>Giá trong bài là giá tại thời điểm viết. Shopee thay đổi giá liên tục — hãy kiểm tra giá thực tế trên trang sản phẩm trước khi mua.</p>
+<h2>Dữ liệu trang web thu thập</h2>
+<p>Trang này dùng Google Analytics để biết có bao nhiêu người ghé thăm, họ đến từ từ khóa nào, và đọc bài nào lâu nhất. Dữ liệu này ở dạng thống kê tổng hợp — tôi không biết bạn là ai và không thu thập tên, email hay thông tin liên hệ của bạn. Địa chỉ IP được ẩn bớt trước khi lưu.</p>
+<p>Khi bạn bấm vào một liên kết Shopee từ trang này, Shopee gắn một mã theo dõi để biết đơn hàng đến từ đâu và trả hoa hồng tương ứng. Đó là cơ chế của chương trình tiếp thị liên kết Shopee, không phải của tôi.</p>
 <h2>Liên hệ</h2><p>Góp ý hoặc báo lỗi thông tin: qua form liên hệ trên trang Giới thiệu.</p></article></main>
 <footer class="site"><div class="wrap">
 <p>Trang này có chứa liên kết tiếp thị liên kết (affiliate) của Shopee. Nếu bạn mua hàng qua liên kết, tôi nhận được một khoản hoa hồng nhỏ từ Shopee mà bạn KHÔNG phải trả thêm đồng nào. Điều này không ảnh hưởng đến nội dung đánh giá — tôi chỉ giới thiệu sản phẩm mà tôi thực sự đánh giá là đáng mua.</p>
